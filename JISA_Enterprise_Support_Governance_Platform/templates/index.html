@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JISA Enterprise Support Platform</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>JISA Enterprise Support & Governance Platform</h1>
+  <p>Implementation • Production Support • SLA • Program Governance</p>
+</header>
+
+<main>
+<section class="cards" id="metrics"></section>
+
+<section class="panel">
+<h2>Production Incidents</h2>
+<table><thead><tr><th>ID</th><th>Incident</th><th>Severity</th><th>Status</th><th>Owner</th><th>Customer</th><th>SLA</th></tr></thead>
+<tbody id="incidents"></tbody></table>
+</section>
+
+<section class="grid">
+<div class="panel"><h2>Programs</h2><div id="projects"></div></div>
+<div class="panel"><h2>Action / Governance Tracker</h2><div id="activities"></div></div>
+</section>
+
+<section class="panel">
+<h2>Create Incident</h2>
+<form id="incidentForm">
+<input name="title" placeholder="Incident title" required>
+<select name="severity"><option>Low</option><option>Medium</option><option>High</option><option>Critical</option></select>
+<input name="owner" placeholder="Owner" required>
+<input name="customer" value="PSU Bank" required>
+<input name="sla_hours" type="number" value="8" min="1">
+<button>Create Incident</button>
+</form>
+<p id="result"></p>
+</section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

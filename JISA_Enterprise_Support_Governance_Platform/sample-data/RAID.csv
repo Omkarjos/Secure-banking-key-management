@@ -1,0 +1,5 @@
+ID,Type,Description,Owner,Due Date,Status
+R001,Risk,Certificate renewal delay,Infrastructure,2026-09-05,Open
+D001,Dependency,Customer approval for change window,Customer IT,2026-08-29,Open
+A001,Action,Complete database RCA,DB Team,2026-08-26,Closed
+I001,Issue,SOP modernization delayed,Customer Success,2026-09-10,Open
